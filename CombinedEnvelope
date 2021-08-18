@@ -1,0 +1,41 @@
+POST /restapi/v2.1/accounts/*******/envelopes HTTP/1.1
+Host: demo.docusign.net
+Accept: application/json
+Authorization: Bearer eyJ0emo*****8joM1g
+Content-Type: application/json
+
+{
+    "emailSubject": "Combined Envelope TestJSON",
+    "status": "sent",
+    "compositeTemplates": [{
+        "serverTemplates": [{
+            "sequence": "1",
+            "templateId": "bc090b6a-6350-4e74-86b8-4a565fadb3bd"
+        }],
+        "inlineTemplates": [{
+            "recipients": {
+                "signers": [{
+                    "email": "janedoe@test.test",
+                    "name": "Jane Doe",
+                    "recipientId": "1",
+                }]
+            },
+            "sequence": "2"
+        }]
+    }, {
+        "serverTemplates": [{
+            "sequence": "3",
+            "templateId": "23847fc5-a56b-4676-a0c0-a5d785fac25c"
+        }],
+        "inlineTemplates": [{
+            "recipients": {
+                "signers": [{
+                    "email": "johndoe@test.test",
+                    "name": "John Doe",
+                    "recipientId": "1",
+                }]
+            },
+            "sequence": "4"
+        }]
+    }]
+}
