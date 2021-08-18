@@ -16,8 +16,8 @@ Content-Type: application/json
         "tabs": {
           "signHereTabs": [
             {
-              "xPosition": "100",
-              "yPosition": "100",
+              "xPosition": "72",
+              "yPosition": "72",
               "documentId": "1",
               "pageNumber": "1"
             }
@@ -27,7 +27,16 @@ Content-Type: application/json
       {
         "email": "iamthebatman@jakedstest.xyz",
         "name": "Bruce Wayne",
-        "recipientId": 2
+        "recipientId": 2, 
+        "tabs": {
+          "signHereTabs": [
+            {
+              "xPosition": "72",
+              "yPosition": "144",
+              "documentId": "1", 
+              "pagenumber": "1"
+            }]
+        }
       }
     ]
   },
